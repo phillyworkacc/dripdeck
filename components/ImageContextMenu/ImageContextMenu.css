@@ -1,0 +1,17 @@
+.image-context-menu {
+   min-width: 100px;
+   width: fit-content;
+   height: fit-content;
+   background-color: #1a1a1a;
+   border-radius: 8px;
+   border: 1px solid #2b2b2b;
+   color: white;
+   padding: 8px;
+   user-select: none;
+}
+
+.image-context-menu button.delete-item {
+   color: #e42d2d;
+   border: 1px solid #2c2c2c;
+   background-color: #1a1a1a;
+}

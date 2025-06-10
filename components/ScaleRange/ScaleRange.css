@@ -1,0 +1,45 @@
+.scale-range-container {
+   padding: 8px 0;
+   user-select: none;
+}
+
+.scale-range {
+   position: relative;
+   height: 8px;
+   background: #363636;
+   border-radius: 4px;
+   cursor: pointer;
+   user-select: none;
+}
+
+.scale-range .range {
+   position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   background: #ffffff;
+   border-radius: 4px;
+   transition: width 0.1s;
+   user-select: none;
+}
+
+.scale-range .thumb {
+   position: absolute;
+   top: 50%;
+   transform: translate(-70%, -50%);
+   aspect-ratio: 1;
+   height: 105%;
+   background: #ffffff;
+   border-radius: 50%;
+   cursor: grab;
+   transition: left 0.1s;
+   user-select: none;
+}
+
+.scale-range-container .label {
+   margin-top: 8px;
+   color: #ffffff;
+   text-align: center;
+   font-size: 14px;
+   user-select: none;
+}
