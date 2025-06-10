@@ -86,8 +86,7 @@ export function ClothingList ({ x, y, onCloseAction, onAddNewClothingItem }: Clo
    const imageKitUrl = 'https://ik.imagekit.io/ioyj2mdnudripdeckapp/'
 
    useEffect(() => {
-      setSavedOutfits(JSON.parse(localStorage.getItem('drip_deck_saved_outfits')!))
-      console.log(JSON.parse(localStorage.getItem('drip_deck_saved_outfits')!))
+      setSavedOutfits(JSON.parse(localStorage.getItem('drip_deck_saved_outfits') || '[]'))
    }, [])
 
    const titleCase = (text: string) => {
