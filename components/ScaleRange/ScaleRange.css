@@ -1,4 +1,5 @@
 .scale-range-container {
+   width: 100%;
    padding: 8px 0;
    user-select: none;
 }
