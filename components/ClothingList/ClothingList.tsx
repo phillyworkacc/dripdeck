@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, ChevronRight, X } from 'lucide-react';
 import { CustomProductIcon } from '../Icons/Icon';
 import { AnimatePresence, motion } from 'framer-motion';
-import { imageScale } from '@/app/page';
 
 type ClothingListProps = {
 	x: number;
@@ -81,6 +80,7 @@ const clothingListJSONString = `{
 
 
 export function ClothingList ({ x, y, onCloseAction, onAddNewClothingItem }: ClothingListProps) {
+   const imageScale = 0.3;
    const [categorySelected, setCategorySelected] = useState<string | null>(null);
    const [savedOutfits, setSavedOutfits] = useState<any[]>([]);
    const imageKitUrl = 'https://ik.imagekit.io/ioyj2mdnudripdeckapp/'

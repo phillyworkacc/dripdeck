@@ -8,9 +8,6 @@ import { Stage, Layer, Image } from 'react-konva';
 import { useImageContextMenu } from "@/components/ImageContextMenu/ImageContextMenuContext";
 import { CircleArrowDown, CirclePlus, Trash2, X } from "lucide-react";
 import { toast } from "sonner";
-import ScaleRange from "@/components/ScaleRange/ScaleRange";
-
-export const imageScale = 0.3;
 
 export default function AppPage () {
 	const captureRef = useRef<any | null>(null);
@@ -24,8 +21,6 @@ export default function AppPage () {
 	const [windowHeight, setWindowHeight] = useState(0);
 	const [outfitName, setOutfitName] = useState('');
 	const [showSaveOutfitDialog, setShowSaveOutfitDialog] = useState(false)
-
-	const [range, setRange] = useState(0)
 
    // load images only once per src
    useEffect(() => {
